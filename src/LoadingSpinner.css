@@ -4,8 +4,8 @@
     height: 16px;
     border-radius: 50%;
     animation: loading-spinner-spin 1s linear infinite;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    border-top: 2px solid rgba(0, 0, 0, 1);
+    border: 2px solid var(--loading-spinner-outer-color, rgba(0, 0, 0, 0.3));
+    border-top: 2px solid var(--loading-spinner-inner-color, rgba(0, 0, 0, 1));
 }
 
 @keyframes loading-spinner-spin {
