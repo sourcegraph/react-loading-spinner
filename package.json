@@ -1,6 +1,6 @@
 {
   "name": "@sourcegraph/react-loading-spinner",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Sourcegraph's loading spinner",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
