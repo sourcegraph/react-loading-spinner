@@ -11,7 +11,8 @@
     "prettier": "prettier '**/{*.{js?(on),ts?(x),css},.*.js?(on)}' --write --list-different",
     "tslint": "tslint -c tslint.json -p tsconfig.json './src/*.ts?(x)'",
     "build": "rm-cli -r lib/ && npm run tsc && cpy 'src/**/*.css' lib/",
-    "tsc": "tsc -p tsconfig.dist.json"
+    "tsc": "tsc -p tsconfig.dist.json",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
