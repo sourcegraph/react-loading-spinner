@@ -1,0 +1,40 @@
+{
+  "name": "@sourcegraph/react-loading-spinner",
+  "version": "0.0.1",
+  "description": "Sourcegraph's loading spinner",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prettier": "prettier '**/{*.{js?(on),ts?(x),css},.*.js?(on)}' --write --list-different",
+    "tslint": "tslint -c tslint.json -p tsconfig.json './src/*.ts?(x)'",
+    "build": "rm-cli -r lib/ && npm run tsc && cpy 'src/**/*.css' lib/",
+    "tsc": "tsc -p tsconfig.dist.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourcegraph/react-loading-spinner.git"
+  },
+  "author": "Nick Snyder <nick@sourcegraph.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sourcegraph/react-loading-spinner/issues"
+  },
+  "homepage": "https://github.com/sourcegraph/react-loading-spinner#readme",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "@sourcegraph/prettierrc": "^2.1.1",
+    "@sourcegraph/tsconfig": "^3.0.0",
+    "@sourcegraph/tslint-config": "^12.0.0",
+    "@types/react": "^16.4.7",
+    "cpy-cli": "^2.0.0",
+    "prettier": "^1.14.0",
+    "react": "^16.4.1",
+    "rm-cli": "^1.4.2",
+    "typescript": "^3.0.1"
+  }
+}
